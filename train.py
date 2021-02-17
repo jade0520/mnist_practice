@@ -42,7 +42,7 @@ def train(model, train_loader, optimizer, criterion, device):
 
         logits  = logits.cpu().detach().numpy()
         labels = targets.cpu().detach().numpy()
-        preds = logits > 0.5
+        preds = logits > 0.6
         batch_acc = (labels == preds).mean()
 
         total_acc += batch_acc
@@ -81,7 +81,7 @@ def evaluation(model, val_loader, device):
             
             logits  = logits.cpu().detach().numpy()
             labels = targets.cpu().detach().numpy()
-            preds = logits > 0.5
+            preds = logits > 0.6
             batch_acc = (labels == preds).mean()
 
             total_acc += batch_acc
@@ -113,7 +113,7 @@ def main():
     
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet().to(device)
-    
+    las_model.load_state_dict(torch.load("/home/jhjeong/jiho_deep/dacon/MNIST_2/plz_load/model_end.pth"))
     las_model = nn.DataParallel(las_model).to(device)
     #-------------------------- Loss Initialize ---------------------------
     las_criterion = nn.BCELoss()
@@ -153,12 +153,12 @@ def main():
     print("las_only 를 학습합니다.")
     print(" ")
 
-    pre_acc = 0
+    pre_acc = 0.706
     pre_test_loss = 100000
     for epoch in range(config.training.begin_epoch, config.training.end_epoch):
         for param_group in las_optimizer.param_groups:
             print("lr = ", param_group['lr'])
-
+        
         print('{} 학습 시작'.format(datetime.datetime.now()))
         train_time = time.time()
         train_loss, train_acc = train(las_model, train_loader, las_optimizer, las_criterion, device)
@@ -171,7 +171,7 @@ def main():
         eval_total_time = time.time() - eval_time
         print('{} Epoch {} (val) ACC {:.4f}, time: {:.2f}'.format(datetime.datetime.now(), epoch+1, val_acc, eval_total_time))
         
-        scheduler.step()
+        #scheduler.step()
         
         with open("./train.txt", "a") as ff:
             ff.write('Epoch %d (Training) Loss %0.4f Acc %0.4f time %0.4f' % (epoch+1, train_loss, train_acc, train_total_time))
@@ -182,10 +182,10 @@ def main():
 
         if pre_acc < val_acc:
             print("best model을 저장하였습니다.")
-            torch.save(las_model.module.state_dict(), "./plz_load/only_las_model1.pth")
+            torch.save(las_model.module.state_dict(), "./plz_load/model.pth")
             pre_acc = val_acc
 
-        torch.save(las_model.module.state_dict(), "./plz_load/only_las_model_end1.pth")
+        torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")
         
                 
 
