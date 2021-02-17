@@ -113,7 +113,7 @@ def main():
     
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet().to(device)
-    las_model.load_state_dict(torch.load("/home/jhjeong/jiho_deep/dacon/MNIST_2/plz_load/model_end.pth"))
+ #   las_model.load_state_dict(torch.load("/home/jhjeong/jiho_deep/dacon/MNIST_2/plz_load/model_end.pth"))
     las_model = nn.DataParallel(las_model).to(device)
     #-------------------------- Loss Initialize ---------------------------
     las_criterion = nn.BCELoss()
