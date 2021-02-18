@@ -1,0 +1,9 @@
+pyyaml
+editdistance
+scipy
+torchvision 
+matplotlib
+pandas
+librosa
+sox
+opencv-python
