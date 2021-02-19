@@ -1,0 +1,603 @@
+
+
+학습 시작
+Epoch 1 (Training) Loss 0.6939 Acc 0.5378 time 80.7925
+Epoch 1 (val) Acc 0.5369 time 1.6996 
+
+Epoch 2 (Training) Loss 0.6906 Acc 0.5385 time 77.2999
+Epoch 2 (val) Acc 0.5369 time 1.6946 
+
+Epoch 3 (Training) Loss 0.6904 Acc 0.5385 time 78.6583
+Epoch 3 (val) Acc 0.5369 time 1.7007 
+
+Epoch 4 (Training) Loss 0.6905 Acc 0.5385 time 79.1042
+Epoch 4 (val) Acc 0.5369 time 1.6637 
+
+Epoch 5 (Training) Loss 0.6903 Acc 0.5385 time 79.1687
+Epoch 5 (val) Acc 0.5369 time 1.6790 
+
+Epoch 6 (Training) Loss 0.6903 Acc 0.5385 time 79.5154
+Epoch 6 (val) Acc 0.5369 time 1.6985 
+
+Epoch 7 (Training) Loss 0.6903 Acc 0.5385 time 79.9790
+Epoch 7 (val) Acc 0.5369 time 1.7104 
+
+Epoch 8 (Training) Loss 0.6902 Acc 0.5385 time 80.1872
+Epoch 8 (val) Acc 0.5369 time 1.6966 
+
+Epoch 9 (Training) Loss 0.6902 Acc 0.5385 time 80.0148
+Epoch 9 (val) Acc 0.5369 time 1.7828 
+
+Epoch 10 (Training) Loss 0.6903 Acc 0.5385 time 79.7704
+Epoch 10 (val) Acc 0.5369 time 1.7762 
+
+Epoch 11 (Training) Loss 0.6903 Acc 0.5385 time 79.7145
+Epoch 11 (val) Acc 0.5369 time 1.8004 
+
+Epoch 12 (Training) Loss 0.6903 Acc 0.5385 time 79.8224
+Epoch 12 (val) Acc 0.5369 time 1.7275 
+
+Epoch 13 (Training) Loss 0.6903 Acc 0.5385 time 80.3471
+Epoch 13 (val) Acc 0.5369 time 1.6937 
+
+Epoch 14 (Training) Loss 0.6904 Acc 0.5385 time 79.9483
+Epoch 14 (val) Acc 0.5369 time 1.7058 
+
+Epoch 15 (Training) Loss 0.6903 Acc 0.5385 time 80.4096
+Epoch 15 (val) Acc 0.5369 time 1.7145 
+
+Epoch 16 (Training) Loss 0.6903 Acc 0.5385 time 79.8088
+Epoch 16 (val) Acc 0.5369 time 1.7320 
+
+Epoch 17 (Training) Loss 0.6904 Acc 0.5385 time 79.9982
+Epoch 17 (val) Acc 0.5369 time 1.6756 
+
+Epoch 18 (Training) Loss 0.6903 Acc 0.5385 time 80.0098
+Epoch 18 (val) Acc 0.5369 time 1.6859 
+
+Epoch 19 (Training) Loss 0.6903 Acc 0.5385 time 80.0431
+Epoch 19 (val) Acc 0.5369 time 1.7282 
+
+Epoch 20 (Training) Loss 0.6903 Acc 0.5385 time 79.8787
+Epoch 20 (val) Acc 0.5369 time 1.7802 
+
+Epoch 21 (Training) Loss 0.6903 Acc 0.5385 time 79.9417
+Epoch 21 (val) Acc 0.5369 time 1.7519 
+
+Epoch 22 (Training) Loss 0.6903 Acc 0.5385 time 80.0183
+Epoch 22 (val) Acc 0.5369 time 1.6929 
+
+Epoch 23 (Training) Loss 0.6903 Acc 0.5385 time 79.6432
+Epoch 23 (val) Acc 0.5369 time 1.7325 
+
+Epoch 24 (Training) Loss 0.6902 Acc 0.5385 time 80.1595
+Epoch 24 (val) Acc 0.5369 time 1.7452 
+
+Epoch 25 (Training) Loss 0.6902 Acc 0.5385 time 80.2661
+Epoch 25 (val) Acc 0.5369 time 1.7356 
+
+Epoch 26 (Training) Loss 0.6902 Acc 0.5385 time 80.5128
+Epoch 26 (val) Acc 0.5369 time 1.7221 
+
+Epoch 27 (Training) Loss 0.6902 Acc 0.5385 time 80.0774
+Epoch 27 (val) Acc 0.5369 time 1.7299 
+
+Epoch 28 (Training) Loss 0.6903 Acc 0.5385 time 79.9187
+Epoch 28 (val) Acc 0.5369 time 1.7436 
+
+Epoch 29 (Training) Loss 0.6903 Acc 0.5385 time 80.3036
+Epoch 29 (val) Acc 0.5369 time 1.7379 
+
+Epoch 30 (Training) Loss 0.6903 Acc 0.5385 time 79.8324
+Epoch 30 (val) Acc 0.5369 time 1.7241 
+
+Epoch 31 (Training) Loss 0.6903 Acc 0.5385 time 80.4059
+Epoch 31 (val) Acc 0.5369 time 1.7586 
+
+Epoch 32 (Training) Loss 0.6902 Acc 0.5385 time 79.7523
+Epoch 32 (val) Acc 0.5369 time 1.6892 
+
+Epoch 33 (Training) Loss 0.6903 Acc 0.5385 time 79.6875
+Epoch 33 (val) Acc 0.5369 time 1.6985 
+
+Epoch 34 (Training) Loss 0.6902 Acc 0.5385 time 79.8795
+Epoch 34 (val) Acc 0.5369 time 1.7100 
+
+Epoch 35 (Training) Loss 0.6902 Acc 0.5385 time 79.8660
+Epoch 35 (val) Acc 0.5369 time 1.7160 
+
+Epoch 36 (Training) Loss 0.6902 Acc 0.5385 time 79.7537
+Epoch 36 (val) Acc 0.5369 time 1.7221 
+
+Epoch 37 (Training) Loss 0.6902 Acc 0.5385 time 79.9477
+Epoch 37 (val) Acc 0.5369 time 1.7037 
+
+Epoch 38 (Training) Loss 0.6902 Acc 0.5385 time 79.5159
+Epoch 38 (val) Acc 0.5369 time 1.7767 
+
+Epoch 39 (Training) Loss 0.6902 Acc 0.5385 time 79.8083
+Epoch 39 (val) Acc 0.5369 time 1.8061 
+
+Epoch 40 (Training) Loss 0.6902 Acc 0.5385 time 80.0791
+Epoch 40 (val) Acc 0.5369 time 1.7343 
+
+Epoch 41 (Training) Loss 0.6902 Acc 0.5385 time 79.5096
+Epoch 41 (val) Acc 0.5369 time 1.7176 
+
+Epoch 42 (Training) Loss 0.6902 Acc 0.5385 time 80.2884
+Epoch 42 (val) Acc 0.5369 time 1.7288 
+
+Epoch 43 (Training) Loss 0.6902 Acc 0.5385 time 80.0098
+Epoch 43 (val) Acc 0.5369 time 1.7074 
+
+Epoch 44 (Training) Loss 0.6902 Acc 0.5385 time 79.6943
+Epoch 44 (val) Acc 0.5369 time 1.6976 
+
+Epoch 45 (Training) Loss 0.6902 Acc 0.5385 time 79.4904
+Epoch 45 (val) Acc 0.5369 time 1.7098 
+
+Epoch 46 (Training) Loss 0.6902 Acc 0.5385 time 80.0697
+Epoch 46 (val) Acc 0.5369 time 1.7031 
+
+Epoch 47 (Training) Loss 0.6902 Acc 0.5385 time 80.0248
+Epoch 47 (val) Acc 0.5369 time 1.7220 
+
+Epoch 48 (Training) Loss 0.6902 Acc 0.5385 time 79.3720
+Epoch 48 (val) Acc 0.5369 time 1.6933 
+
+Epoch 49 (Training) Loss 0.6902 Acc 0.5385 time 80.1690
+Epoch 49 (val) Acc 0.5369 time 1.7298 
+
+Epoch 50 (Training) Loss 0.6902 Acc 0.5385 time 79.6210
+Epoch 50 (val) Acc 0.5369 time 1.7248 
+
+Epoch 51 (Training) Loss 0.6902 Acc 0.5385 time 79.5497
+Epoch 51 (val) Acc 0.5369 time 1.7128 
+
+Epoch 52 (Training) Loss 0.6899 Acc 0.5385 time 80.2559
+Epoch 52 (val) Acc 0.5370 time 1.7215 
+
+Epoch 53 (Training) Loss 0.6886 Acc 0.5385 time 79.4526
+Epoch 53 (val) Acc 0.5369 time 1.7196 
+
+Epoch 54 (Training) Loss 0.6881 Acc 0.5386 time 79.8384
+Epoch 54 (val) Acc 0.5401 time 1.7053 
+
+Epoch 55 (Training) Loss 0.6878 Acc 0.5386 time 79.9766
+Epoch 55 (val) Acc 0.5372 time 1.7028 
+
+Epoch 56 (Training) Loss 0.6877 Acc 0.5386 time 79.9034
+Epoch 56 (val) Acc 0.5369 time 1.8076 
+
+Epoch 57 (Training) Loss 0.6875 Acc 0.5385 time 79.3663
+Epoch 57 (val) Acc 0.5369 time 1.8080 
+
+Epoch 58 (Training) Loss 0.6874 Acc 0.5386 time 79.7624
+Epoch 58 (val) Acc 0.5369 time 1.6863 
+
+Epoch 59 (Training) Loss 0.6873 Acc 0.5386 time 79.6099
+Epoch 59 (val) Acc 0.5365 time 1.8561 
+
+Epoch 60 (Training) Loss 0.6873 Acc 0.5386 time 79.6780
+Epoch 60 (val) Acc 0.5371 time 1.7539 
+
+Epoch 61 (Training) Loss 0.6870 Acc 0.5387 time 79.8226
+Epoch 61 (val) Acc 0.5385 time 1.8109 
+
+Epoch 62 (Training) Loss 0.6869 Acc 0.5387 time 79.4110
+Epoch 62 (val) Acc 0.5369 time 1.7339 
+
+Epoch 63 (Training) Loss 0.6867 Acc 0.5388 time 79.6973
+Epoch 63 (val) Acc 0.5369 time 1.7653 
+
+Epoch 64 (Training) Loss 0.6862 Acc 0.5391 time 79.5698
+Epoch 64 (val) Acc 0.5375 time 1.7372 
+
+Epoch 65 (Training) Loss 0.6855 Acc 0.5395 time 79.6757
+Epoch 65 (val) Acc 0.5374 time 1.7765 
+
+Epoch 66 (Training) Loss 0.6844 Acc 0.5405 time 79.9338
+Epoch 66 (val) Acc 0.5424 time 1.7208 
+
+Epoch 67 (Training) Loss 0.6830 Acc 0.5421 time 79.4527
+Epoch 67 (val) Acc 0.5396 time 1.7184 
+
+Epoch 68 (Training) Loss 0.6819 Acc 0.5435 time 79.5727
+Epoch 68 (val) Acc 0.5460 time 1.7099 
+
+Epoch 69 (Training) Loss 0.6802 Acc 0.5457 time 80.2101
+Epoch 69 (val) Acc 0.5432 time 1.7034 
+
+Epoch 70 (Training) Loss 0.6786 Acc 0.5478 time 79.7193
+Epoch 70 (val) Acc 0.5443 time 1.7127 
+
+Epoch 71 (Training) Loss 0.6773 Acc 0.5494 time 79.9353
+Epoch 71 (val) Acc 0.5488 time 1.6986 
+
+Epoch 72 (Training) Loss 0.6761 Acc 0.5509 time 79.9900
+Epoch 72 (val) Acc 0.5485 time 1.6849 
+
+Epoch 73 (Training) Loss 0.6750 Acc 0.5519 time 79.8806
+Epoch 73 (val) Acc 0.5520 time 1.7087 
+
+Epoch 74 (Training) Loss 0.6739 Acc 0.5531 time 79.6102
+Epoch 74 (val) Acc 0.5498 time 1.8276 
+
+Epoch 75 (Training) Loss 0.6732 Acc 0.5541 time 79.4702
+Epoch 75 (val) Acc 0.5499 time 1.6992 
+
+Epoch 76 (Training) Loss 0.6721 Acc 0.5554 time 79.3786
+Epoch 76 (val) Acc 0.5497 time 1.6460 
+
+Epoch 77 (Training) Loss 0.6712 Acc 0.5570 time 80.2127
+Epoch 77 (val) Acc 0.5571 time 1.6982 
+
+Epoch 78 (Training) Loss 0.6703 Acc 0.5575 time 80.2910
+Epoch 78 (val) Acc 0.5575 time 1.7409 
+
+Epoch 79 (Training) Loss 0.6691 Acc 0.5593 time 79.7397
+Epoch 79 (val) Acc 0.5612 time 1.7783 
+
+Epoch 80 (Training) Loss 0.6676 Acc 0.5612 time 79.6617
+Epoch 80 (val) Acc 0.5616 time 1.8374 
+
+Epoch 81 (Training) Loss 0.6648 Acc 0.5644 time 79.9312
+Epoch 81 (val) Acc 0.5623 time 1.7085 
+
+Epoch 82 (Training) Loss 0.6636 Acc 0.5659 time 79.8822
+Epoch 82 (val) Acc 0.5558 time 1.7052 
+
+Epoch 83 (Training) Loss 0.6626 Acc 0.5673 time 79.8838
+Epoch 83 (val) Acc 0.5628 time 1.7086 
+
+Epoch 84 (Training) Loss 0.6614 Acc 0.5688 time 80.4141
+Epoch 84 (val) Acc 0.5636 time 1.7264 
+
+Epoch 85 (Training) Loss 0.6605 Acc 0.5705 time 80.0377
+Epoch 85 (val) Acc 0.5703 time 1.7338 
+
+Epoch 86 (Training) Loss 0.6598 Acc 0.5714 time 80.0748
+Epoch 86 (val) Acc 0.5663 time 1.7274 
+
+Epoch 87 (Training) Loss 0.6590 Acc 0.5728 time 80.4842
+Epoch 87 (val) Acc 0.5703 time 1.7259 
+
+Epoch 88 (Training) Loss 0.6583 Acc 0.5739 time 80.1422
+Epoch 88 (val) Acc 0.5721 time 1.7247 
+
+Epoch 89 (Training) Loss 0.6571 Acc 0.5751 time 80.2605
+Epoch 89 (val) Acc 0.5688 time 1.7252 
+
+Epoch 90 (Training) Loss 0.6564 Acc 0.5769 time 79.9921
+Epoch 90 (val) Acc 0.5746 time 1.8066 
+
+Epoch 91 (Training) Loss 0.6555 Acc 0.5780 time 80.1454
+Epoch 91 (val) Acc 0.5696 time 1.7379 
+
+Epoch 92 (Training) Loss 0.6544 Acc 0.5788 time 80.0698
+Epoch 92 (val) Acc 0.5776 time 1.8030 
+
+Epoch 93 (Training) Loss 0.6539 Acc 0.5802 time 79.9845
+Epoch 93 (val) Acc 0.5760 time 1.7321 
+
+Epoch 94 (Training) Loss 0.6527 Acc 0.5815 time 79.8361
+Epoch 94 (val) Acc 0.5792 time 1.7029 
+
+Epoch 95 (Training) Loss 0.6521 Acc 0.5825 time 80.0975
+Epoch 95 (val) Acc 0.5747 time 1.7091 
+
+Epoch 96 (Training) Loss 0.6510 Acc 0.5835 time 80.0184
+Epoch 96 (val) Acc 0.5820 time 1.7450 
+
+Epoch 97 (Training) Loss 0.6502 Acc 0.5849 time 79.7929
+Epoch 97 (val) Acc 0.5817 time 1.7382 
+
+Epoch 98 (Training) Loss 0.6494 Acc 0.5860 time 79.9497
+Epoch 98 (val) Acc 0.5781 time 1.7087 
+
+Epoch 99 (Training) Loss 0.6482 Acc 0.5876 time 79.9843
+Epoch 99 (val) Acc 0.5802 time 1.7221 
+
+Epoch 100 (Training) Loss 0.6476 Acc 0.5885 time 79.8466
+Epoch 100 (val) Acc 0.5882 time 1.7318 
+
+Epoch 101 (Training) Loss 0.6467 Acc 0.5899 time 80.3284
+Epoch 101 (val) Acc 0.5825 time 1.7252 
+
+Epoch 102 (Training) Loss 0.6456 Acc 0.5911 time 79.6404
+Epoch 102 (val) Acc 0.5842 time 1.7501 
+
+Epoch 103 (Training) Loss 0.6447 Acc 0.5926 time 79.9955
+Epoch 103 (val) Acc 0.5850 time 1.7078 
+
+Epoch 104 (Training) Loss 0.6437 Acc 0.5939 time 80.2525
+Epoch 104 (val) Acc 0.5808 time 1.7158 
+
+Epoch 105 (Training) Loss 0.6424 Acc 0.5955 time 79.7021
+Epoch 105 (val) Acc 0.5870 time 1.7233 
+
+Epoch 106 (Training) Loss 0.6412 Acc 0.5966 time 79.8241
+Epoch 106 (val) Acc 0.5832 time 1.6995 
+
+Epoch 107 (Training) Loss 0.6397 Acc 0.5987 time 80.3053
+Epoch 107 (val) Acc 0.5872 time 1.7291 
+
+Epoch 108 (Training) Loss 0.6380 Acc 0.6006 time 79.8625
+Epoch 108 (val) Acc 0.5877 time 1.8023 
+
+Epoch 109 (Training) Loss 0.6368 Acc 0.6024 time 79.5887
+Epoch 109 (val) Acc 0.5881 time 1.8200 
+
+Epoch 110 (Training) Loss 0.6354 Acc 0.6036 time 79.9766
+Epoch 110 (val) Acc 0.5915 time 1.7030 
+
+Epoch 111 (Training) Loss 0.6339 Acc 0.6057 time 79.9290
+Epoch 111 (val) Acc 0.5938 time 1.6905 
+
+Epoch 112 (Training) Loss 0.6326 Acc 0.6075 time 79.8910
+Epoch 112 (val) Acc 0.5920 time 1.7396 
+
+Epoch 113 (Training) Loss 0.6316 Acc 0.6086 time 79.9848
+Epoch 113 (val) Acc 0.5961 time 1.6987 
+
+Epoch 114 (Training) Loss 0.6302 Acc 0.6097 time 79.5401
+Epoch 114 (val) Acc 0.5991 time 1.7510 
+
+Epoch 115 (Training) Loss 0.6289 Acc 0.6115 time 80.1345
+Epoch 115 (val) Acc 0.6015 time 1.7699 
+
+Epoch 116 (Training) Loss 0.6278 Acc 0.6125 time 79.9177
+Epoch 116 (val) Acc 0.6053 time 1.7081 
+
+Epoch 117 (Training) Loss 0.6262 Acc 0.6146 time 79.5447
+Epoch 117 (val) Acc 0.6005 time 1.7413 
+
+Epoch 118 (Training) Loss 0.6249 Acc 0.6163 time 79.7917
+Epoch 118 (val) Acc 0.6028 time 1.7029 
+
+Epoch 119 (Training) Loss 0.6242 Acc 0.6167 time 79.8723
+Epoch 119 (val) Acc 0.6046 time 1.6989 
+
+Epoch 120 (Training) Loss 0.6229 Acc 0.6184 time 79.7961
+Epoch 120 (val) Acc 0.6047 time 1.7601 
+
+Epoch 121 (Training) Loss 0.6219 Acc 0.6193 time 79.8410
+Epoch 121 (val) Acc 0.6057 time 1.7519 
+
+Epoch 122 (Training) Loss 0.6210 Acc 0.6207 time 79.9443
+Epoch 122 (val) Acc 0.6028 time 1.7053 
+
+Epoch 123 (Training) Loss 0.6196 Acc 0.6225 time 79.6878
+Epoch 123 (val) Acc 0.6069 time 1.7072 
+
+Epoch 124 (Training) Loss 0.6183 Acc 0.6237 time 79.9519
+Epoch 124 (val) Acc 0.6098 time 1.7408 
+
+Epoch 125 (Training) Loss 0.6178 Acc 0.6245 time 80.1843
+Epoch 125 (val) Acc 0.6042 time 1.7340 
+
+Epoch 126 (Training) Loss 0.6167 Acc 0.6259 time 79.6860
+Epoch 126 (val) Acc 0.6072 time 1.7351 
+
+Epoch 127 (Training) Loss 0.6153 Acc 0.6274 time 79.6885
+Epoch 127 (val) Acc 0.6047 time 1.7750 
+
+Epoch 128 (Training) Loss 0.6140 Acc 0.6289 time 80.2796
+Epoch 128 (val) Acc 0.6051 time 1.8015 
+
+Epoch 129 (Training) Loss 0.6132 Acc 0.6297 time 79.6925
+Epoch 129 (val) Acc 0.6070 time 1.7165 
+
+Epoch 130 (Training) Loss 0.6126 Acc 0.6306 time 79.8552
+Epoch 130 (val) Acc 0.6082 time 1.8031 
+
+Epoch 131 (Training) Loss 0.6112 Acc 0.6322 time 79.9781
+Epoch 131 (val) Acc 0.6042 time 1.7433 
+
+Epoch 132 (Training) Loss 0.6100 Acc 0.6335 time 79.6714
+Epoch 132 (val) Acc 0.6037 time 1.8265 
+
+Epoch 133 (Training) Loss 0.6087 Acc 0.6348 time 80.0773
+Epoch 133 (val) Acc 0.6068 time 1.7242 
+
+Epoch 134 (Training) Loss 0.6081 Acc 0.6360 time 79.7277
+Epoch 134 (val) Acc 0.6074 time 1.7191 
+
+Epoch 135 (Training) Loss 0.6065 Acc 0.6372 time 79.8545
+Epoch 135 (val) Acc 0.6126 time 1.7659 
+
+Epoch 136 (Training) Loss 0.6058 Acc 0.6387 time 79.5303
+Epoch 136 (val) Acc 0.6101 time 1.7235 
+
+Epoch 137 (Training) Loss 0.6052 Acc 0.6392 time 79.9471
+Epoch 137 (val) Acc 0.6077 time 1.7287 
+
+Epoch 138 (Training) Loss 0.6037 Acc 0.6409 time 79.1984
+Epoch 138 (val) Acc 0.6148 time 1.7374 
+
+Epoch 139 (Training) Loss 0.6031 Acc 0.6413 time 79.6884
+Epoch 139 (val) Acc 0.6084 time 1.7730 
+
+Epoch 140 (Training) Loss 0.6023 Acc 0.6426 time 79.8923
+Epoch 140 (val) Acc 0.6165 time 1.8244 
+
+Epoch 141 (Training) Loss 0.6008 Acc 0.6440 time 79.5899
+Epoch 141 (val) Acc 0.6114 time 1.7133 
+
+Epoch 142 (Training) Loss 0.5999 Acc 0.6451 time 79.9396
+Epoch 142 (val) Acc 0.6150 time 1.7907 
+
+Epoch 143 (Training) Loss 0.5994 Acc 0.6457 time 79.7628
+Epoch 143 (val) Acc 0.6128 time 1.7148 
+
+Epoch 144 (Training) Loss 0.5983 Acc 0.6468 time 80.2597
+Epoch 144 (val) Acc 0.6094 time 1.7164 
+
+Epoch 145 (Training) Loss 0.5973 Acc 0.6474 time 79.4975
+Epoch 145 (val) Acc 0.6122 time 1.7259 
+
+Epoch 146 (Training) Loss 0.5964 Acc 0.6488 time 79.8740
+Epoch 146 (val) Acc 0.6103 time 1.7176 
+
+Epoch 147 (Training) Loss 0.5952 Acc 0.6501 time 79.4298
+Epoch 147 (val) Acc 0.6118 time 1.6897 
+
+Epoch 148 (Training) Loss 0.5943 Acc 0.6515 time 79.7795
+Epoch 148 (val) Acc 0.6068 time 1.7851 
+
+Epoch 149 (Training) Loss 0.5936 Acc 0.6518 time 79.7635
+Epoch 149 (val) Acc 0.6144 time 1.7310 
+
+Epoch 150 (Training) Loss 0.5927 Acc 0.6529 time 79.8200
+Epoch 150 (val) Acc 0.6130 time 1.7676 
+
+Epoch 151 (Training) Loss 0.5922 Acc 0.6541 time 79.9576
+Epoch 151 (val) Acc 0.6094 time 1.7006 
+
+Epoch 152 (Training) Loss 0.5914 Acc 0.6549 time 79.7853
+Epoch 152 (val) Acc 0.6092 time 1.7416 
+
+Epoch 153 (Training) Loss 0.5905 Acc 0.6556 time 79.8552
+Epoch 153 (val) Acc 0.6087 time 1.7285 
+
+Epoch 154 (Training) Loss 0.5897 Acc 0.6564 time 79.5732
+Epoch 154 (val) Acc 0.6090 time 1.7463 
+
+Epoch 155 (Training) Loss 0.5889 Acc 0.6574 time 80.0935
+Epoch 155 (val) Acc 0.6149 time 1.6867 
+
+Epoch 156 (Training) Loss 0.5875 Acc 0.6588 time 79.5052
+Epoch 156 (val) Acc 0.6118 time 1.7658 
+
+Epoch 157 (Training) Loss 0.5874 Acc 0.6589 time 79.8303
+Epoch 157 (val) Acc 0.6106 time 1.7104 
+
+Epoch 158 (Training) Loss 0.5868 Acc 0.6594 time 79.6746
+Epoch 158 (val) Acc 0.6072 time 1.7396 
+
+Epoch 159 (Training) Loss 0.5859 Acc 0.6604 time 79.2782
+Epoch 159 (val) Acc 0.6068 time 1.7259 
+
+Epoch 160 (Training) Loss 0.5854 Acc 0.6610 time 79.6713
+Epoch 160 (val) Acc 0.6078 time 1.6966 
+
+Epoch 161 (Training) Loss 0.5841 Acc 0.6623 time 79.5682
+Epoch 161 (val) Acc 0.6124 time 1.7163 
+
+Epoch 162 (Training) Loss 0.5835 Acc 0.6629 time 78.9505
+Epoch 162 (val) Acc 0.6145 time 1.8291 
+
+Epoch 163 (Training) Loss 0.5828 Acc 0.6638 time 79.0839
+Epoch 163 (val) Acc 0.6125 time 1.7616 
+
+Epoch 164 (Training) Loss 0.5823 Acc 0.6643 time 79.7457
+Epoch 164 (val) Acc 0.6048 time 1.7132 
+
+Epoch 165 (Training) Loss 0.5811 Acc 0.6653 time 79.6547
+Epoch 165 (val) Acc 0.6119 time 1.7515 
+
+Epoch 166 (Training) Loss 0.5809 Acc 0.6660 time 79.7619
+Epoch 166 (val) Acc 0.6104 time 1.7666 
+
+Epoch 167 (Training) Loss 0.5803 Acc 0.6662 time 79.9822
+Epoch 167 (val) Acc 0.6068 time 1.7288 
+
+Epoch 168 (Training) Loss 0.5792 Acc 0.6672 time 79.4394
+Epoch 168 (val) Acc 0.6121 time 1.7363 
+
+Epoch 169 (Training) Loss 0.5790 Acc 0.6677 time 79.4521
+Epoch 169 (val) Acc 0.6087 time 1.7444 
+
+Epoch 170 (Training) Loss 0.5783 Acc 0.6689 time 79.9598
+Epoch 170 (val) Acc 0.6090 time 1.6976 
+
+Epoch 171 (Training) Loss 0.5776 Acc 0.6691 time 79.2050
+Epoch 171 (val) Acc 0.6088 time 1.7508 
+
+Epoch 172 (Training) Loss 0.5770 Acc 0.6700 time 79.5564
+Epoch 172 (val) Acc 0.6122 time 1.7425 
+
+Epoch 173 (Training) Loss 0.5763 Acc 0.6706 time 79.9724
+Epoch 173 (val) Acc 0.6098 time 1.7587 
+
+Epoch 174 (Training) Loss 0.5752 Acc 0.6718 time 79.4892
+Epoch 174 (val) Acc 0.6110 time 1.8302 
+
+Epoch 175 (Training) Loss 0.5745 Acc 0.6719 time 79.4235
+Epoch 175 (val) Acc 0.6086 time 1.8444 
+
+Epoch 176 (Training) Loss 0.5745 Acc 0.6724 time 79.3596
+Epoch 176 (val) Acc 0.6104 time 1.7258 
+
+Epoch 177 (Training) Loss 0.5738 Acc 0.6734 time 79.5501
+Epoch 177 (val) Acc 0.6084 time 1.7220 
+
+Epoch 178 (Training) Loss 0.5728 Acc 0.6740 time 79.6723
+Epoch 178 (val) Acc 0.6128 time 1.7540 
+
+Epoch 179 (Training) Loss 0.5726 Acc 0.6744 time 80.0186
+Epoch 179 (val) Acc 0.6121 time 1.7132 
+
+Epoch 180 (Training) Loss 0.5718 Acc 0.6753 time 79.6794
+Epoch 180 (val) Acc 0.6119 time 1.7559 
+
+Epoch 181 (Training) Loss 0.5713 Acc 0.6758 time 79.3402
+Epoch 181 (val) Acc 0.6102 time 1.7325 
+
+Epoch 182 (Training) Loss 0.5708 Acc 0.6766 time 80.1184
+Epoch 182 (val) Acc 0.6117 time 1.7422 
+
+Epoch 183 (Training) Loss 0.5702 Acc 0.6769 time 79.4396
+Epoch 183 (val) Acc 0.6131 time 1.7558 
+
+Epoch 184 (Training) Loss 0.5696 Acc 0.6778 time 79.4311
+Epoch 184 (val) Acc 0.6120 time 1.7210 
+
+Epoch 185 (Training) Loss 0.5689 Acc 0.6779 time 80.4354
+Epoch 185 (val) Acc 0.6097 time 1.7627 
+
+Epoch 186 (Training) Loss 0.5685 Acc 0.6787 time 79.7326
+Epoch 186 (val) Acc 0.6133 time 1.8316 
+
+Epoch 187 (Training) Loss 0.5681 Acc 0.6785 time 80.6286
+Epoch 187 (val) Acc 0.6151 time 1.8714 
+
+Epoch 188 (Training) Loss 0.5675 Acc 0.6794 time 80.2620
+Epoch 188 (val) Acc 0.6067 time 1.7287 
+
+Epoch 189 (Training) Loss 0.5671 Acc 0.6797 time 80.0303
+Epoch 189 (val) Acc 0.6140 time 1.8002 
+
+Epoch 190 (Training) Loss 0.5666 Acc 0.6803 time 79.6006
+Epoch 190 (val) Acc 0.6102 time 1.7551 
+
+Epoch 191 (Training) Loss 0.5662 Acc 0.6816 time 79.9854
+Epoch 191 (val) Acc 0.6120 time 1.7702 
+
+Epoch 192 (Training) Loss 0.5657 Acc 0.6808 time 79.5318
+Epoch 192 (val) Acc 0.6092 time 1.7291 
+
+Epoch 193 (Training) Loss 0.5647 Acc 0.6824 time 80.4515
+Epoch 193 (val) Acc 0.6125 time 1.7271 
+
+Epoch 194 (Training) Loss 0.5646 Acc 0.6822 time 80.3513
+Epoch 194 (val) Acc 0.6103 time 1.7179 
+
+Epoch 195 (Training) Loss 0.5645 Acc 0.6826 time 79.5006
+Epoch 195 (val) Acc 0.6112 time 1.7299 
+
+Epoch 196 (Training) Loss 0.5637 Acc 0.6835 time 80.4461
+Epoch 196 (val) Acc 0.6147 time 1.7248 
+
+Epoch 197 (Training) Loss 0.5634 Acc 0.6843 time 80.1971
+Epoch 197 (val) Acc 0.6095 time 1.7507 
+
+Epoch 198 (Training) Loss 0.5623 Acc 0.6844 time 80.5167
+Epoch 198 (val) Acc 0.6131 time 1.8588 
+
+Epoch 199 (Training) Loss 0.5625 Acc 0.6845 time 80.0156
+Epoch 199 (val) Acc 0.6094 time 1.7273 
+
+Epoch 200 (Training) Loss 0.5616 Acc 0.6855 time 79.9859
+Epoch 200 (val) Acc 0.6116 time 1.7453 
+
