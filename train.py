@@ -171,7 +171,7 @@ def main():
         eval_total_time = time.time() - eval_time
         print('{} Epoch {} (val) ACC {:.4f}, time: {:.2f}'.format(datetime.datetime.now(), epoch+1, val_acc, eval_total_time))
         
-        #scheduler.step()
+        scheduler.step()
         
         with open("./train.txt", "a") as ff:
             ff.write('Epoch %d (Training) Loss %0.4f Acc %0.4f time %0.4f' % (epoch+1, train_loss, train_acc, train_total_time))
