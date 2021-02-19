@@ -134,7 +134,7 @@ def main():
     train_loader = AudioDataLoader(dataset=train_dataset,
                                     shuffle=True,
                                     num_workers=config.data.num_workers,
-                                    batch_size=80,
+                                    batch_size=40,
                                     drop_last=True)
     
     #val dataset

@@ -57,7 +57,25 @@ class SpectrogramParser(AudioParser):
 
     def parse_audio(self, audio_path):
        
+       # print(audio_path+"에서 데이터를 불러 오는 중")
         image = cv2.imread(audio_path, cv2.IMREAD_UNCHANGED)
+        # Resize and Denoise 
+	## confg로 옮기기
+        Lap_ksize = 3
+        Gau_ksize = 13
+
+       # res = cv2.resize(image,(512,512),interpolation=cv2.INTER_LINEAR)
+        res = image	
+
+        blur = cv2.GaussianBlur(res,(Gau_ksize,Gau_ksize),0)
+        edge = cv2.Laplacian(blur,cv2.CV_8U,ksize = Lap_ksize)
+
+        DenoisedImg = res + edge
+        cv2.imwrite('./data/denoisedData/'+ audio_path[-9:],DenoisedImg)
+       # print("변환된 데이터 저장 중 :"+'./data/denoisedData/'+audio_path[-9:])
+       
+        image = DenoisedImg
+	
         image = (image/255).astype('float')
         img_t = torch.FloatTensor(image)
 
