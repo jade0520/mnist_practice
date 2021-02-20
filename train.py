@@ -8,6 +8,7 @@ import datetime
 import editdistance
 import scipy.signal
 import numpy as np 
+import gc
 
 # torch 관련
 import torch
@@ -93,6 +94,8 @@ def evaluation(model, val_loader, device):
 
 def main():
 
+    torch.cuda.empty_cache() #캐시 데이터 삭제 
+
     with open("./train.txt", "w") as f:
        
         f.write('\n')
@@ -107,10 +110,11 @@ def main():
     random.seed(config.data.seed)
     torch.manual_seed(config.data.seed)
     torch.cuda.manual_seed_all(config.data.seed)
-
+    
     cuda = torch.cuda.is_available()
     device = torch.device('cuda' if cuda else 'cpu')
-    
+ 
+   
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet().to(device)
  #   las_model.load_state_dict(torch.load("/home/jhjeong/jiho_deep/dacon/MNIST_2/plz_load/model_end.pth"))
@@ -134,7 +138,7 @@ def main():
     train_loader = AudioDataLoader(dataset=train_dataset,
                                     shuffle=True,
                                     num_workers=config.data.num_workers,
-                                    batch_size=40,
+                                    batch_size=32,
                                     drop_last=True)
     
     #val dataset
@@ -187,7 +191,11 @@ def main():
 
         torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")
         
-                
+    del train_dataset # 학습데이터 삭제
+    del val_dataset
+    del las_model
+    gc.collect()
+    torch.cuda.empty_cache() #GPU캐시데이터 삭제             
 
 if __name__ == '__main__':
     main()
