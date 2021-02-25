@@ -15,6 +15,7 @@ import matplotlib
 from PIL import Image
 import torchvision.transforms as transforms
 import cv2
+from model_rnnt.spec_augment import spec_augment
 
 windows = {
     'hamming': scipy.signal.hamming,
@@ -53,43 +54,47 @@ class SpectrogramParser(AudioParser):
         super(SpectrogramParser, self).__init__()
         self.normalize = normalize
         self.feature_type = feature_type
-        self.spec_augment = spec_augment
-
+        self.spec_augment = spec_augment   
+ 
     def parse_audio(self, audio_path):
-       
-       # print(audio_path+"에서 데이터를 불러 오는 중")
         image = cv2.imread(audio_path, cv2.IMREAD_UNCHANGED)
         # Resize and Denoise 
 	## confg로 옮기기
         #Lap_ksize = 3
         #Gau_ksize = 13
+       # print(".")
 
         res = cv2.resize(image,(512,512),interpolation=cv2.INTER_LINEAR)
-       # res = image	
+       #res = image	
 
         blur = cv2.GaussianBlur(res,(13,13),0)
         edge = cv2.Laplacian(blur,cv2.CV_8U,ksize = 3)
 
-        DenoisedImg = res + edge
- #       cv2.imwrite('./data/denoisedData/'+ audio_path[-9:],DenoisedImg)
-       # print("변환된 데이터 저장 중 :"+'./data/denoisedData/'+audio_path[-9:])
+        image = res + edge
+ 
+
+        if self.spec_augment:
+            specAug = spec_augment()
+            image = specAug.augment(image)
+
+       #cv2.imwrite('./data/augmentedData/'+audio_path[-9:],image)
 	
-        image = (DenoisedImg/255).astype('float')
+        image = (image/255).astype('float')
         img_t = torch.FloatTensor(image)
 
         img_t = img_t.unsqueeze(0)
-               
+         
+
+
         '''
         if self.normalize:
             mean = spect.mean()
             std = spect.std()
             spect.add_(-mean)
             spect.div_(std)
-        
-
+       
         if self.spec_augment:
-            spect = spec_augment(spect)
-
+            spect = spec_augment(img_t)
         if False:
             path = './test_img'
             os.makedirs(path, exist_ok=True)

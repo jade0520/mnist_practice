@@ -33,7 +33,8 @@ def train(model, train_loader, optimizer, criterion, device):
         optimizer.zero_grad()
 
         inputs, targets = data
-
+       # print(inputs.shape,inputs.type)
+        
         inputs = inputs.to(device) # (batch_size, time, freq)
         targets = targets.type(torch.FloatTensor)
         targets = targets.to(device)
@@ -117,7 +118,7 @@ def main():
    
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet().to(device)
- #   las_model.load_state_dict(torch.load("/home/jhjeong/jiho_deep/dacon/MNIST_2/plz_load/model_end.pth"))
+   # las_model.load_state_dict(torch.load("./plz_load/model_end_1st100.pth"))
     las_model = nn.DataParallel(las_model).to(device)
     #-------------------------- Loss Initialize ---------------------------
     las_criterion = nn.BCELoss()
@@ -127,18 +128,18 @@ def main():
     las_optimizer = optim.Adam(las_model.module.parameters(), 
                                 lr=config.optim.lr,
                                 weight_decay=1e-6)
-    scheduler = optim.lr_scheduler.MultiStepLR(las_optimizer, milestones=[30,80], gamma=0.5)
+    scheduler = optim.lr_scheduler.MultiStepLR(las_optimizer, milestones=[20,70], gamma=0.5)
     #-------------------------- Data load ---------------------------------
     #train dataset
     train_dataset = SpectrogramDataset("./data/train.csv",
                                        feature_type="config.audio_data.type", 
                                        normalize=True, 
-                                       spec_augment=False)
+                                       spec_augment=True)
 
     train_loader = AudioDataLoader(dataset=train_dataset,
                                     shuffle=True,
                                     num_workers=config.data.num_workers,
-                                    batch_size=32,
+                                    batch_size=64,
                                     drop_last=True)
     
     #val dataset
@@ -189,13 +190,7 @@ def main():
             torch.save(las_model.module.state_dict(), "./plz_load/model.pth")
             pre_acc = val_acc
 
-        torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")
-        
-    del train_dataset # 학습데이터 삭제
-    del val_dataset
-    del las_model
-    gc.collect()
-    torch.cuda.empty_cache() #GPU캐시데이터 삭제             
+        torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")             
 
 if __name__ == '__main__':
     main()
