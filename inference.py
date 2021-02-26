@@ -79,7 +79,7 @@ def main():
     device = torch.device('cpu')
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet()
-    las_model.load_state_dict(torch.load("./plz_load/model_end.pth"))
+    las_model.load_state_dict(torch.load("./plz_load/model.pth"))
     
     las_model = las_model.to(device)
     

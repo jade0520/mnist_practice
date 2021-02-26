@@ -1,0 +1,6 @@
+
+
+학습 시작
+Epoch 1 (Training) Loss 0.3869 Acc 0.8106 time 2147.4573
+Epoch 1 (val) Acc 0.7403 time 3.3554 
+

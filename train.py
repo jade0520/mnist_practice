@@ -118,7 +118,7 @@ def main():
    
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet().to(device)
-   # las_model.load_state_dict(torch.load("./plz_load/model_end_1st100.pth"))
+    las_model.load_state_dict(torch.load("./plz_load/model_end.pth"))
     las_model = nn.DataParallel(las_model).to(device)
     #-------------------------- Loss Initialize ---------------------------
     las_criterion = nn.BCELoss()
@@ -128,7 +128,8 @@ def main():
     las_optimizer = optim.Adam(las_model.module.parameters(), 
                                 lr=config.optim.lr,
                                 weight_decay=1e-6)
-    scheduler = optim.lr_scheduler.MultiStepLR(las_optimizer, milestones=[20,70], gamma=0.5)
+   # scheduler = optim.lr_scheduler.MultiStepLR(las_optimizer, milestones=[20,70], gamma=0.5)
+    scheduler = optim.lr_scheduler.CosineAnnealingLR(las_optimizer,T_max =10, eta_min = 0)
     #-------------------------- Data load ---------------------------------
     #train dataset
     train_dataset = SpectrogramDataset("./data/train.csv",
@@ -190,7 +191,8 @@ def main():
             torch.save(las_model.module.state_dict(), "./plz_load/model.pth")
             pre_acc = val_acc
 
-        torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")             
+       # torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")             
+        torch.save(las_model.module.state_dict(), "./plz_load/model_v100.pth",_use_new_zipfile_serialization=False)
 
 if __name__ == '__main__':
     main()
