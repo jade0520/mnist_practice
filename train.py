@@ -118,12 +118,13 @@ def main():
    
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet().to(device)
-    las_model.load_state_dict(torch.load("./plz_load/model_end.pth"))
+    las_model.load_state_dict(torch.load("./plz_load/model_AugmentOnly.pth"))
     las_model = nn.DataParallel(las_model).to(device)
     #-------------------------- Loss Initialize ---------------------------
     las_criterion = nn.BCELoss()
     #las_criterion = LabelSmoothingLoss(num_classes=config.model.vocab_size, ignore_index=0, smoothing=0.1, reduction='sum').to(device)
-    
+     
+   
     #-------------------- Model Pararllel & Optimizer ---------------------
     las_optimizer = optim.Adam(las_model.module.parameters(), 
                                 lr=config.optim.lr,
@@ -191,8 +192,8 @@ def main():
             torch.save(las_model.module.state_dict(), "./plz_load/model.pth")
             pre_acc = val_acc
 
-       # torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")             
-        torch.save(las_model.module.state_dict(), "./plz_load/model_v100.pth",_use_new_zipfile_serialization=False)
+        torch.save(las_model.module.state_dict(), "./plz_load/model_end.pth")             
+        #torch.save(las_model.module.state_dict(), "./plz_load/model_v100.pth",_use_new_zipfile_serialization=False)
 
 if __name__ == '__main__':
     main()

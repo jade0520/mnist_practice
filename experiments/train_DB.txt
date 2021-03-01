@@ -1,0 +1,48 @@
+
+
+학습 시작
+Epoch 1 (Training) Loss 0.7049 Acc 0.5355 time 324.7295
+Epoch 1 (val) Acc 0.5368 time 3.4844 
+
+Epoch 2 (Training) Loss 0.6935 Acc 0.5383 time 321.8202
+Epoch 2 (val) Acc 0.5372 time 3.4469 
+
+Epoch 3 (Training) Loss 0.6908 Acc 0.5385 time 322.9908
+Epoch 3 (val) Acc 0.5369 time 3.4633 
+
+Epoch 4 (Training) Loss 0.6898 Acc 0.5386 time 321.8497
+Epoch 4 (val) Acc 0.5369 time 3.4772 
+
+Epoch 5 (Training) Loss 0.6891 Acc 0.5385 time 321.4099
+Epoch 5 (val) Acc 0.5369 time 3.4485 
+
+Epoch 6 (Training) Loss 0.6887 Acc 0.5386 time 322.4306
+Epoch 6 (val) Acc 0.5369 time 3.5179 
+
+Epoch 7 (Training) Loss 0.6883 Acc 0.5386 time 322.0934
+Epoch 7 (val) Acc 0.5369 time 3.4030 
+
+Epoch 8 (Training) Loss 0.6876 Acc 0.5387 time 321.7968
+Epoch 8 (val) Acc 0.5371 time 3.3683 
+
+Epoch 9 (Training) Loss 0.6870 Acc 0.5388 time 322.0275
+Epoch 9 (val) Acc 0.5369 time 3.4898 
+
+Epoch 10 (Training) Loss 0.6864 Acc 0.5389 time 322.1584
+Epoch 10 (val) Acc 0.5373 time 3.4088 
+
+Epoch 11 (Training) Loss 0.6862 Acc 0.5390 time 321.6526
+Epoch 11 (val) Acc 0.5372 time 3.3990 
+
+Epoch 12 (Training) Loss 0.6862 Acc 0.5390 time 321.9537
+Epoch 12 (val) Acc 0.5371 time 3.5048 
+
+Epoch 13 (Training) Loss 0.6861 Acc 0.5390 time 321.2961
+Epoch 13 (val) Acc 0.5372 time 3.3868 
+
+Epoch 14 (Training) Loss 0.6860 Acc 0.5390 time 321.3761
+Epoch 14 (val) Acc 0.5375 time 3.4285 
+
+Epoch 15 (Training) Loss 0.6856 Acc 0.5395 time 321.6233
+Epoch 15 (val) Acc 0.5372 time 3.5247 
+

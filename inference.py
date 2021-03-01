@@ -16,7 +16,7 @@ import torch.utils.data
 import torch.optim as optim
 import torch.nn.functional as F
 
-from model_rnnt.model import Resnet
+from model_rnnt.deepModel import Resnet
 from model_rnnt.data_loader_deepspeech import SpectrogramDataset, AudioDataLoader, AttrDict
 
 def evaluation(model, val_loader, device):
@@ -40,7 +40,7 @@ def evaluation(model, val_loader, device):
             logits  = logits.cpu().detach().numpy()           
             logits = np.where(logits>0.5, 1, 0)
 
-            with open("./sample_submission.csv", "a") as f:
+            with open("./DeepModel_v100.csv", "a") as f:
                 f.write(str(count))
                 f.write(",")
 
@@ -62,7 +62,7 @@ def evaluation(model, val_loader, device):
 def main():
     
 
-    with open("./sample_submission.csv", "w") as f:
+    with open("./DeepModel_v100.csv", "w") as f:
         f.write("index,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z")
         f.write('\n')
 
@@ -79,7 +79,7 @@ def main():
     device = torch.device('cpu')
     #-------------------------- Model Initialize --------------------------   
     las_model = Resnet()
-    las_model.load_state_dict(torch.load("./plz_load/model.pth"))
+    las_model.load_state_dict(torch.load("./plz_load/deepModel_v100.pth"))
     
     las_model = las_model.to(device)
     

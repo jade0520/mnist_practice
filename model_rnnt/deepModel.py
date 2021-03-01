@@ -3,10 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import nn, autograd
 import math
-
-#DropBlock
 from dropblock import DropBlock2D
-
 
 class Resnet(nn.Module):
     def __init__(self, ):
@@ -52,6 +49,7 @@ class Resnet(nn.Module):
             nn.BatchNorm2d(128)
         )
 
+        # 128 -> 256 
         self.conv9 = nn.Sequential(
             nn.Conv2d(in_channels=128, out_channels=64, kernel_size=1, stride=1),
             nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1),
@@ -66,13 +64,21 @@ class Resnet(nn.Module):
             nn.BatchNorm2d(256)
         )
 
-        self.conv11 = nn.Sequential(
+        self.conv10_ = nn.Sequential(
             nn.Conv2d(in_channels=256, out_channels=64, kernel_size=1, stride=1),
             nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1),
             nn.Conv2d(in_channels=64, out_channels=256, kernel_size=1, stride=1),
             nn.BatchNorm2d(256)
         )
 
+        self.conv11 = nn.Sequential(
+            nn.Conv2d(in_channels=256, out_channels=64, kernel_size=1, stride=1),
+            nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(in_channels=64, out_channels=256, kernel_size=1, stride=1),
+            nn.BatchNorm2d(256)
+        )
+        
+        # 256 -> 512 
         self.conv12 = nn.Sequential(
             nn.Conv2d(in_channels=256, out_channels=128, kernel_size=1, stride=1),
             nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, stride=1, padding=1),
@@ -87,12 +93,22 @@ class Resnet(nn.Module):
             nn.BatchNorm2d(512)
         )
 
+        self.conv13_ = nn.Sequential(
+            nn.Conv2d(in_channels=512, out_channels=128, kernel_size=1, stride=1),
+            nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, stride=1, padding=1),
+            nn.Conv2d(in_channels=128, out_channels=512, kernel_size=1, stride=1),
+            nn.BatchNorm2d(512)
+        )
+
         self.conv14 = nn.Sequential(
             nn.Conv2d(in_channels=512, out_channels=128, kernel_size=1, stride=1),
             nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, stride=1, padding=1),
             nn.Conv2d(in_channels=128, out_channels=512, kernel_size=1, stride=1),
             nn.BatchNorm2d(512)
         )
+
+        #########더 깊게
+        # 512 -> 1024 
 
         self.relu = nn.ReLU()
         self.relu1 = nn.ReLU()
@@ -102,9 +118,11 @@ class Resnet(nn.Module):
         self.relu5 = nn.ReLU()
         self.relu6 = nn.ReLU()
         self.relu7 = nn.ReLU()
+        self.relu7_ = nn.ReLU()        
         self.relu8 = nn.ReLU()
         self.relu9 = nn.ReLU()
         self.relu10 = nn.ReLU()
+        self.relu10_ = nn.ReLU()        
         self.relu11 = nn.ReLU()
         self.relu12 = nn.ReLU()
         self.relu13 = nn.ReLU()
@@ -118,22 +136,21 @@ class Resnet(nn.Module):
 
         self.dropout = nn.Dropout(p=0.3)
         self.dropout1 = nn.Dropout(p=0.3)
-
-        """
+       
+       
         # DropBlocks
         self.dropout_2d = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3)
-        self.dropout_2d1 = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3)
+        self.dropout_2d1 = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3)  
         self.dropout_2d2 = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3)
-        self.dropout_2d3 = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3)        
-        self.dropout_2d4 = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3)
-
-        """
+        self.dropout_2d3 = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3) 
+        self.dropout_2d4 = DropBlock2D(block_size = 3, drop_prob =0.3) # nn.Dropout2d(p=0.3) 
+        """ 
         self.dropout_2d = nn.Dropout2d(p=0.3)
         self.dropout_2d1 = nn.Dropout2d(p=0.3)
         self.dropout_2d2 = nn.Dropout2d(p=0.3)
         self.dropout_2d3 = nn.Dropout2d(p=0.3)
         self.dropout_2d4 = nn.Dropout2d(p=0.3)
-      
+        """        
 
        # inputSize = 512 # upscaled size : original size = 256
        # inSize = inputSize*256 # 131072
@@ -203,6 +220,10 @@ class Resnet(nn.Module):
         x = self.relu7(x)
         x = self.conv10(x)
         
+        # 추가
+        x = self.relu7_(x)
+        x = self.conv10_(x)   
+
         x = self.relu8(x)
         x = self.conv11(x)
         x = x + x_res
@@ -217,6 +238,10 @@ class Resnet(nn.Module):
         
         x = self.relu10(x)
         x = self.conv13(x)
+
+        # 추가
+        x = self.relu10_(x)
+        x = self.conv13_(x)        
         
         x = self.relu11(x)
         x = self.conv14(x)
